@@ -1,34 +1,32 @@
 version: '3'
 
 services:
-  django:
+  web:
     build: .
-    container_name: django
+    container_name: web
     volumes:
       - .:/usr/src/Desktop/s_task4
     environment:
-      - DB_HOST=localhost
-      - DB_NAME=stask_db
-      - DB_USER=yountuan
-      - DB_PASSWORD=1
+      - DB_HOST=${DB_HOST}
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
       - TOKEN
     ports:
       - 8000:8000
-
     command:
       sh -c "python3 manage.py makemigrations && 
       python3 manage.py migrate && 
       python3 manage.py runserver 0.0.0.0:8000"
-
     depends_on:
       - pgdb
 
   pgdb:
     image: postgres:16.3
     environment:
-      - POSTGRES_DB=localhost
-      - POSTGRES_USER=yountuan
-      - POSTGRES_PASSWORD=1
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
     container_name: pgdb
     volumes:
       - pgdbdata:/var/lib/postgresql/data/

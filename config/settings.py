@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # library
     'rest_framework',
+    'rest_framework.authtoken',
     'drf_yasg',
     # apps
     'goods',
@@ -92,8 +93,8 @@ DATABASES = {
         'PORT': config('DB_PORT'),
     }
 }
-# database_url = config('DB_URL')
-# DATABASES['default'] = dj_database_url.parse(database_url)
+database_url = config('DB_URL')
+DATABASES['default'] = dj_database_url.parse(database_url)
 
 
 # Password validation

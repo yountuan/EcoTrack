@@ -134,3 +134,5 @@ class AlertTests(TestCase):
         response = self.client.delete(f'/api/alerts/{alert.id}/')
         self.assertEqual(response.status_code, 204)
         self.assertEqual(Alert.objects.count(), 0)
+
+
