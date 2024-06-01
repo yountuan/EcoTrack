@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'drf_yasg',
     # apps
+    'goods',
 ]
 
 MIDDLEWARE = [
@@ -91,9 +92,8 @@ DATABASES = {
         'PORT': config('DB_PORT'),
     }
 }
-database_url = config('DB_URL')
-DATABASES['default'] = dj_database_url.parse(database_url)
-
+# database_url = config('DB_URL')
+# DATABASES['default'] = dj_database_url.parse(database_url)
 
 
 # Password validation
@@ -136,3 +136,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+}
