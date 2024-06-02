@@ -34,16 +34,24 @@ Implement error handling and return appropriate HTTP statuses and messages.
 ## Screenshots
 
 1. **API Endpoints Overview:**
+   ![API Endpoints Overview](/screenshots/Screenshot2024-06-01at19.11.10.png)
    ![API Endpoints Overview]()
    ![API Endpoints Overview]()
    ![API Endpoints Overview]()
-   ![API Endpoints Overview]()
+
+
+2. **Tests:**
+   ![Tests](/screenshots/Screenshot2024-06-01at17.47.30.png)
+
 
 3. **Project configs:**
    Docker-compose
-   ![Docker-compose]()
+   ![Docker-compose](/screenshots/Screenshot2024-06-01at18.10.31.png)
+   ![Docker-compose](/screenshots/Screenshot2024-06-01at18.10.47.png)
+   ![Docker-compose](/screenshots/Screenshot2024-06-01at18.10.54.png)
 
-3. **Database Schema:**
+
+4. **Database Schema:**
    ![Database Schema]()
 
 ## Video Presentation
@@ -53,7 +61,7 @@ https://drive.google.com/drive/folders/1BR_qLzhz5P1JVFfpLAKOqZHvO-NuY4hR?usp=sha
 
 ## Deploy on Free Cloud Server (Render):
 (Since it's a free server, it could work very slow. Sorry for that T_T)
-https://store-8r6h.onrender.com
+https://ecotrack-izrf.onrender.com
 Credentials to log in to admin panel are
 'admin' for username and
 '1' for password.
