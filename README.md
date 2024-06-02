@@ -35,9 +35,7 @@ Implement error handling and return appropriate HTTP statuses and messages.
 
 1. **API Endpoints Overview:**
    ![API Endpoints Overview](/screenshots/Screenshot2024-06-01at19.11.10.png)
-   ![API Endpoints Overview]()
-   ![API Endpoints Overview]()
-   ![API Endpoints Overview]()
+   ![API Endpoints Overview](/screenshots/Screenshot2024-06-02at12.35.22.png)
 
 
 2. **Tests:**
@@ -51,8 +49,11 @@ Implement error handling and return appropriate HTTP statuses and messages.
    ![Docker-compose](/screenshots/Screenshot2024-06-01at18.10.54.png)
 
 
-4. **Database Schema:**
-   ![Database Schema]()
+4. **Swagger Documentation:**
+   ![Swagger Documentation](/screenshots/Screenshot2024-06-02at12.33.48.png)
+   ![Swagger Documentation](/screenshots/Screenshot2024-06-02at12.33.53.png)
+   ![Swagger Documentation](/screenshots/Screenshot2024-06-02at12.34.01.png)
+
 
 ## Video Presentation
 
